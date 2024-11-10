@@ -1,0 +1,27 @@
+.l-piramide {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        ". cuspide ."
+        "lateral-izquierdo . lateral-derecho";
+
+    &--invertida {
+        text-align: center;
+        display: grid;
+        grid-template-areas:
+            "lateral-izquierdo . lateral-derecho"
+            ". . ."
+            ". cuspide .";
+    }
+
+    &__cuspide {
+        grid-area: cuspide;
+    }
+
+    &__izquierdo {
+        grid-area: lateral-izquierdo;
+    }
+    &__derecho {
+        grid-area: lateral-derecho;
+    }
+}

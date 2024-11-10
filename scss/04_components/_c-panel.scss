@@ -1,0 +1,42 @@
+.c-panel {
+    text-align: center;
+    background-color: var(--color-panel);
+    padding: 10px;
+    border-radius: 5px;
+    &__header {
+        padding: 10px;
+        font-size: 14px;
+        &--xl{
+            font-size: 16px;
+            padding: 12px;
+        }
+    }
+    &__body {
+        padding: 20px;
+        background-color: var(--color-body);
+        box-shadow: var(--sombra);
+    }
+    &__footer {
+        padding: 7px;
+        font-size: 12px;
+        &--xl {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+    &--danger {
+        --color-panel: hsl(0, 100%, 80%);
+        --color-body: hsl(0, 100%, 92%);
+        --sombra: 1px 1px 5px 3px hsl(0, 61%, 87%);
+    }
+    &--warning {
+        --color-panel: hsl(41, 100%, 80%);
+        --color-body: hsl(41, 100%, 92%);
+        --sombra: 1px 1px 5px 3px hsl(41, 61%, 87%);
+    }
+    &--info {
+        --color-panel: hsl(168, 100%, 80%);
+        --color-body: hsl(168, 100%, 92%);
+        --sombra: 1px 1px 5px 3px hsl(168, 61%, 87%);
+    }
+}

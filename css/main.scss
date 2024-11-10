@@ -1,0 +1,18 @@
+//utilities
+@import 
+"../scss/01_utilities/css-variables";
+
+//layout
+@import "../scss/03_layout/l-horizontal",
+ "../scss/03_layout/l-piramide",
+ "../scss/03_layout/l-columns";
+
+//components
+@import "../scss/04_components/c-button";
+@import "../scss/04_components/c-panel";
+
+//global
+@import "../scss/06_gobal/g--background";
+@import "../scss/06_gobal/g--height";
+@import "../scss/06_gobal/g--width";
+@import "../scss/06_gobal/g--padding";

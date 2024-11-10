@@ -1,0 +1,63 @@
+:root {
+    --color-panel: hsl(224, 100%, 80%);
+    --color-body: hsl(224, 100%, 92%);
+    --sombra: 1px 1px 5px 3px hsl(168, 60%, 87%);
+}
+
+.c-panel {
+    text-align: center;
+    background-color: var(--color-panel);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.c-panel__header {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.c-panel__header--xl {
+    font-size: 16px;
+    padding: 12px;
+}
+
+.c-panel__body {
+    padding: 20px;
+    background-color: var(--color-body);
+    box-shadow: var(--sombra);
+}
+
+.c-panel__footer {
+    padding: 7px;
+    font-size: 12px;
+}
+
+.c-panel__footer--xl {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.c-panel--danger {
+    --color-panel: hsl(0, 100%, 80%);
+    --color-body: hsl(0, 100%, 92%);
+    --sombra: 1px 1px 5px 3px hsl(0, 61%, 87%);
+}
+
+.c-panel--warning {
+    --color-panel: hsl(41, 100%, 80%);
+    --color-body: hsl(41, 100%, 92%);
+    --sombra: 1px 1px 5px 3px hsl(41, 61%, 87%);
+}
+
+.c-panel--info {
+    --color-panel: hsl(168, 100%, 80%);
+    --color-body: hsl(168, 100%, 92%);
+    --sombra: 1px 1px 5px 3px hsl(168, 61%, 87%);
+}
+
+.l-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}

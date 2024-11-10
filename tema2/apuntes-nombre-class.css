@@ -1,0 +1,10 @@
+/* BEM bloque elemento modificador:
+siempre poner variables largas y muy detalladas
+c- de componente
+l-layout componente q no se ve solo se coloca, un bloque, no pinta color, solo tienen elementos
+g-global
+-- para modificar(decir q es una caracteristica)
+__ elemento hijo
+c-boton para decir q es un boton
+c-boton--funcion-alternativa para decir q es un boton con una funcion de color alternativo
+c-boton--importancia-secundaria para decir que un boton tiene una importancia secundari no es tan llamativo que un primario*/

@@ -1,0 +1,80 @@
+:root{
+    --color-principal: hsl(241, 50%, 50%);
+    --color-fondo:hsl(0, 0%, 100%);
+}
+
+
+/* BEM bloque elemento modificador:
+siempre poner variables largas y muy detalladas
+c- de componente
+l-layout
+g-global
+-- para modificar(decir q es una caracteristica)
+c-boton para decir q es un boton
+c-boton--funcion-alternativa para decir q es un boton con una funcion de color alternativo
+c-boton--importancia-secundaria para decir que un boton tiene una importancia secundari no es tan llamativo que un primario*/
+
+/*FORMA 1 VARIABLES*/
+.alternativa {
+    --color-principal: hsl(38, 80%, 50%);
+}
+
+.peligrosa {
+    --color-principal: hsl(0, 78%, 44%);
+}
+
+
+.secundaria {
+    color: var(--color-principal);
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-principal);
+
+}
+
+.terciaria {
+    color: var(--color-principal);
+    background-color: var(--color-fondo);
+    border: 0px;
+}
+
+/* FORMA 2 CREARLO TODO
+
+.alternativa-primaria {
+
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(38, 80%, 50%);
+
+}
+
+.alternativa-secundaria {
+    color: hsl(38, 80%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(38, 80%, 50%);
+
+}
+
+.alternativa-terciaria {
+    color: hsl(38, 80%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    border: 0px;
+}
+
+.peligrosa-primaria {
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 80%, 50%);
+
+}
+
+.peligrosa-secundaria {
+    color: hsl(0, 80%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 80%, 50%);
+
+}
+
+.peligrosa-terciaria {
+    color: hsl(0, 80%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    border: 0px;
+}
+    */
