@@ -1,0 +1,70 @@
+.c-menu-lateral {
+    --c-menu-lateral-titulo-font-size: var(--font-size-m);
+    --c-menu-lateral-subtitulo-font-size: var(--font-size-s);
+    --c-menu-lateral-border: var(--border-style-solid);
+    --c-menu-lateral-border-radius: var(--border-radius-1);
+    --c-menu-lateral-color-warning: var(--color-red);
+    --c-menu-lateral-color-warning-subtitulo: var(--color-red-6);
+    --c-menu-lateral-color-subtitulo:var(--color-grey);
+    --c-menu-lateral-hover:var(--color-grey-7);
+    --c-menu-lateral-border-color: var(--color-grey-1);
+    --c-menu-lateral-background-color-warning: var(--background-color-red-8);
+    --c-menu-lateral-margin-right-icono: var(--margin-9);
+    --c-menu-lateral-margin: var(--margin-5);
+    --c-menu-lateral-margin-item: var(--margin-5);
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+
+    &__item{ 
+        margin-bottom: var( --c-menu-lateral-margin-item);
+        margin-left: var( --c-menu-lateral-margin-item);
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+     
+        @include border(1px,
+            var(--c-menu-lateral-border),
+            var(--c-menu-lateral-border-color), var(--c-menu-lateral-border-radius));
+
+        &--danger{
+        
+            @include border(1px,
+                var(--c-menu-lateral-border),
+                var(--c-menu-lateral-color-warning), var(--c-menu-lateral-border-radius));
+                @include font(var(--c-menu-lateral-color-warning), 16px, Arial,left, none);
+                background-color: var(--c-menu-lateral-background-color-warning);
+        }
+
+        &-icono { 
+            margin: var(  --c-menu-lateral-margin);
+            margin-left: var(--c-menu-lateral-margin-right-icono);
+        }
+        &-texto {
+      
+            &--titulo {
+                font-size: var(--c-menu-lateral-titulo-font-size); 
+                margin: var(  --c-menu-lateral-margin);
+                &--danger {  margin: var(  --c-menu-lateral-margin);
+                    @include font(var(--c-menu-lateral-color-warning), var(--c-menu-lateral-titulo-font-size), Arial,left, none);
+                    background-color: var(--c-menu-lateral-background-color-warning);
+                }
+        
+            }
+            &--subtitulo {
+                font-size: var(--c-menu-lateral-subtitulo-font-size);
+                margin: var(  --c-menu-lateral-margin);
+                color:var(  --c-menu-lateral-color-subtitulo);
+                &--danger {
+                    margin: var(  --c-menu-lateral-margin);
+                    @include font(var(--c-menu-lateral-color-warning-subtitulo), var(--c-menu-lateral-subtitulo-font-size), Arial,left, none);
+                    background-color: var(--c-menu-lateral-background-color-warning);
+                }
+            }
+        }
+    }
+}
