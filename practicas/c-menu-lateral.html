@@ -1,60 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
   <link rel="stylesheet" href="../Diw-practicaSASS/css/main.css">
   <style>
  
     .c-menu-lateral__item:hover{
       background-color: var(--c-menu-lateral-hover);
     }
-    .c-menu-lateral.hidden {
-        transform: translateX(-300px);
-    }
 
-    .toggle-btn.toggle-hidden {
-        left: 0;
-    }
-
-    .main-content.main-hidden {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    /* Media query para dispositivos móviles */
-    @media screen and (max-width: 768px) {
-        .toggle-btn {
-            left: 300px;
-        }
-
-        .main-content {
-            margin-left: 320px;
-            width: calc(100% - 200px);
-        }
-
-        .c-menu-lateral.hidden {
-            transform: translateX(-300px);
-        }
-
-        .toggle-btn.toggle-hidden {
-            left: 0;
-        }
-    }
 </style>
-
 <body>
-    <div class=" c-menu-lateral g--position-fixed" id="menulateral" style="transition: transform 0.3s;">
-      <div class="c-menu-lateral__item-texto">
+    <div class=" c-menu-lateral g--position-fixed g--height-100pc" id="menulateral" style="transition: transform 0.3s;">
+      <div class="c-menu-lateral__logo">
         <div class=" c-menu-lateral__item-texto--titulo  g--margin-7">Ajuda DANA</div>
       </div>
-    
+    <div class="c-menu-lateral__opciones">
       <div class="c-menu-lateral__item ">
         <div class="c-menu-lateral__item-icono fa-lg"><i class="fa-solid fa-house "></i></div>
         <div class="c-menu-lateral__item-texto"><div class="c-menu-lateral__item-texto--titulo g--color-grey-1"> Inicio</div></div>
@@ -102,29 +66,21 @@
           <div class="c-menu-lateral__item-texto--subtitulo">Gestionar donaciones</div>
         </div>
       </div>
-      <div class="c-menu-lateral__item-texto--titulo">iniciar sesion</div>
+      <div class="c-menu-lateral__item">
+        <div class="c-menu-lateral__item-icono"> <i class="g--color-green-4 fa-solid fa-handshake fa-lg"></i></div>
+        <div class="c-menu-lateral__item-texto">
+          <div class="c-menu-lateral__item-texto--titulo">Ofrecer Ayuda</div>
+          <div class="c-menu-lateral__item-texto--subtitulo">Si puedes ayudar a otros</div>
+        </div>
+      </div>
+      <div class="c-menu-lateral__item">
+        <div class="c-menu-lateral__item-icono"> <i class="fa-solid fa-user g--color-purple-4"></i> <i class="fa-solid fa-magnifying-glass g--color-purple-4"></i></div>
+        <div class="c-menu-lateral__item-texto">
+          <div class="c-menu-lateral__item-texto--titulo">Desaparecidos</div>
+          <div class="c-menu-lateral__item-texto--subtitulo">Reportar o buscar</div>
+        </div>
+      </div></div>
+      <div class="c-menu-lateral__footer g--margin-7">Inicio Sesion</div>
     </div>
-
-    <button class="toggle-btn g--position-fixed g--font-size-m g--width-35" id="toggle-btn"
-        style="cursor: pointer; transition: left 0.3s; top: 20px;" onclick="toggle()">&#9776;</button>
-
-    <div class="main-content g--margin-12" id="main-content">
-        <h1>Bienvenido a nuestra página</h1>
-        <p>Este es un ejemplo de un navbar lateral con un botón fijo para abrir y cerrar en HTML, CSS y JavaScript.</p>
-    </div>
-
-    <script>
-        function toggle() {
-            const menulateral = document.getElementById("menulateral");
-            const mainContent = document.getElementById("main-content");
-            const toggleBtn = document.getElementById("toggle-btn");
-
-            menulateral.classList.toggle("hidden");
-            mainContent.classList.toggle("main-hidden");
-            toggleBtn.classList.toggle("toggle-hidden");
-        }
-    </script>
-
 </body>
-
 </html>

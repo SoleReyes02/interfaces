@@ -1,0 +1,22 @@
+.g--position {
+&-fixed{
+    position: fixed;
+}
+    @each $key, $value in $position {
+        &-#{$key} {
+            position: var(--position-#{$key});
+        }
+    }
+
+    @each $key, $value in $position-move {
+        &--right-#{$key} {
+            right: $value;
+        }
+
+        &--left-#{$key} {
+            left: $value;
+        }
+     
+    }
+
+}

@@ -1,4 +1,4 @@
-.l-columns {
+.l-columns{
     display: grid;
 
     // Definir número de columnas (de 1 a 12)
@@ -7,5 +7,9 @@
             grid-template-columns: repeat($i, 1fr);
         }
     }
-    
+    @for $i from 1 through 12 {
+        &--gap-#{$i} {
+            gap: $i;
+        }
+    }
 }
